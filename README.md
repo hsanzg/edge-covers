@@ -10,7 +10,7 @@ to terminate in a reasonable amount of time.
 We use the [GMP library](https://gmplib.org/) to compute binomial coefficients
 with multiple-precision arithmetic. The program takes about ten seconds to
 count all the edge covers of the complete graphs on $2\le n\le 100$ vertices.
-(For your convenience, these initial values are tabulated in the (big, 100.6 MB)
+(For your convenience, these initial values are tabulated in the 100.6-megabyte
 [`edge_covers100.txt`](edge_covers100.txt) file.) This isn't terribly bad, but
 we would probably do better by avoiding repeated calculations of $\binom{\binom k2}e$
 for different values of $n$.
