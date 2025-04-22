@@ -19,7 +19,7 @@ for different values of $n$. Another idea would be to apply the identity
 \binom{\binom{k-1}2}e,\quad e<\binom{k-1}2.
 ```
 The [`mpz_bin_uiui`] routine is so fast that this approach gives no significant
-improvement over the brute force method; see commit [`8fc8e1`]. Suggestions and
+improvement over the brute force method; see commit [`366044`]. Suggestions and
 comments are welcome.
 
 # License
@@ -28,4 +28,4 @@ This is free and unencumbered software released into the public domain.
 See the [`LICENSE`](LICENSE) file for more details.
 
 [`mpz_bin_uiui`]: https://gmplib.org/manual/Number-Theoretic-Functions#index-mpz_005fbin_005fuiui
-[`8fc8e1`]: https://github.com/hsanzg/edge-covers/commit/8fc8e1be25fd491831f966ba03bd6a81d638bf7a
+[`366044`]: https://github.com/hsanzg/edge-covers/commit/366044c639f72a83d48897fb4f03b289c78cb2f0
