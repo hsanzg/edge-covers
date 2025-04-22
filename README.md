@@ -13,11 +13,11 @@ count all the edge covers of the complete graphs on $2\le n\le 100$ vertices.
 (For your convenience, these initial values are tabulated in the 103-megabyte
 [`edge_covers100.txt`](edge_covers100.txt) file.) This isn't terribly bad, but
 we would probably do better by avoiding repeated calculations of $\binom{\binom k2}e$
-for different values of $n$. Another idea would be to apply the identity\
-$$
+for different values of $n$. Another idea would be to apply the identity
+```math
 \binom{\binom k2}e=\frac{\binom k2^{\underline k}}{\left(\binom k2-e\right)^{\underline k}}
 \binom{\binom{k-1}2}e,\quad e<\binom{k-1}2.
-$$
+```
 The [`mpz_bin_uiui`] routine is so fast that this approach gives no significant
 improvement over the brute force method; see commit [`8fc8e1`]. Suggestions and
 comments are welcome.
